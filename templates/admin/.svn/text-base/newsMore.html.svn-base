@@ -1,9 +1,0 @@
-
-{% for item in list %}
-<tr moreItem="{{item.formatDate}}">
-	<td>{{item.title}}</td>
-	<td>{{item.formatted}}</td>
-	<td class="bool{{item.visible}}">{{item.visible}}</td>
-	<td class="action"><a href="/admin/news/edit?newsid={{item.key.id}}">edit</a></td>
-</tr>
-{% endfor %}

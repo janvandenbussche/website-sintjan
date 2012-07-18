@@ -1,8 +1,0 @@
-
-		{% for item in list %}
-		<tr moreItem="{{item.formatDate}}">
-			<td>{{item.title}}</td>
-			<td>{{item.formatted}}</td>
-			<td class="action"><a href="/admin/cal/edit?calid={{item.key.id}}">edit</a></td>
-		</tr>
-		{% endfor %}
