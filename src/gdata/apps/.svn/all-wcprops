@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/26/gae/sintjan-lommel.be/src/gdata/apps
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/26/gae/sintjan-lommel.be/src/gdata/apps/__init__.py
+END
+service.py
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/26/gae/sintjan-lommel.be/src/gdata/apps/service.py
+END

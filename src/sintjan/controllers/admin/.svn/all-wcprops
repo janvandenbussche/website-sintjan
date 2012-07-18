@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/57/gae/sintjan-lommel.be/src/sintjan/controllers/admin
+END
+importer.py
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/26/gae/sintjan-lommel.be/src/sintjan/controllers/admin/importer.py
+END
+calendar.py
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/26/gae/sintjan-lommel.be/src/sintjan/controllers/admin/calendar.py
+END
+news.py
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/26/gae/sintjan-lommel.be/src/sintjan/controllers/admin/news.py
+END
+general.py
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/26/gae/sintjan-lommel.be/src/sintjan/controllers/admin/general.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/26/gae/sintjan-lommel.be/src/sintjan/controllers/admin/__init__.py
+END
+pages.py
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/57/gae/sintjan-lommel.be/src/sintjan/controllers/admin/pages.py
+END

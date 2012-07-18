@@ -1,0 +1,55 @@
+{% include "../inc/header.html" %}
+{% include "inc.left.html" %}
+
+	<div id="plaats"><strong>U bent hier&nbsp;:&nbsp;</strong>
+		<a href="/prikbord/">Prikbord</a><span class="arrow">&nbsp;&gt;&nbsp;</span>
+		<a href="/prikbord/voegtoe">Voeg toe</a>
+	</div>
+				
+	<div id="sjCenter" class="sjCenterS1">
+		<div class="sjPadding">
+			<h1>Voeg toe</h1>
+			<p>Prik zelf iets op ons prikbord</p>
+
+			{% if error %}
+			<div class="error">Je moet je naam en een berichtje ingeven.  De som 2+3 moet ook correct opgelost worden!</div>
+			{% endif %}
+
+			<form method="post" action="/prikbord/voegtoe">
+			<table>
+			<tbody>
+				<tr>
+					<td style="width:100px"><label for="fName">Naam:</label></td>
+					<td><input id="fName" type="Text" name="name" size="50" value="{{name}}" tabindex="1"/></td>
+				</tr>
+				<tr>
+					<td><label for="fMail">e-mail:</label></td>
+					<td><input id="fMail" type="Text" name="email" size="50" value="{{email}}" tabindex="2"/></td>
+				</tr>
+				<tr>
+					<td valign="top"><label for="fMsg">Jouw bericht:</label></td>
+					<td><textarea id="fMsg" rows="5" cols="50" name="msg" tabindex="3">{{msg}}</textarea></td>
+				</tr>
+				<tr>
+					<td><label for="fSum">Som, 2+3=?</label></td>
+					<td><input id="fSum" type="text" name="sum" size="10" tabindex="4"/></td>	
+				</tr>
+				<tr>
+					<td></td><td>Zorg ervoor dat je de som juist ingeeft, anders word je berichtje niet toegevoegd.  Dit is om <a href="http://nl.wikipedia.org/wiki/Spam">spam</a> te vermijden.<br/><br/></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td><input type="Submit" value="Voeg toe" tabindex="5"/></td>
+				</tr>
+			</tbody></table>
+			</form>
+			<script type="text/javascript">document.getElementById('fName').focus()</script>
+
+
+		</div>
+	</div>
+
+{% include "../inc/footer.html" %}
+
+
+

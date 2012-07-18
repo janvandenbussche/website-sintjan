@@ -1,0 +1,70 @@
+{% include "../inc/header.html" %}
+{% include "../inc/blocks/homepage.html" %}
+
+	<div id="plaats"><strong>U bent hier&nbsp;:&nbsp;</strong>
+		<a href="/">Home</a>
+	</div>
+				
+	<div id="sjCenter">
+		<div class="sjPadding">
+			<h1>Sint-Jan online</h1>
+
+			<div class="yellowbox">
+				<ul>
+				{% for item in list %}	
+				<li><a href="{{item.path}}">{{item.title}}</a></li>
+				{% endfor %}
+				</ul>
+			</div>
+
+			<ul id="news" moreTarget="2">
+            {% autoescape off %}
+			{% for item in list %}
+			    <li moreItem="{{item.formatDate}}" _id="{{item.key.id}}">
+			    	<div class="title"><a href="{{item.path}}">{{item.title}}</a></div>
+			    	<div class="msg">{{item.msg}}</div>
+		    		<ul class="foot clearfix">
+		    			<li>{{item.formatted}}</li>
+		    			<li><a href="{{item.path}}">Reageer</a></li>
+		    		</ul>
+		    		
+		    		{% ifequal item.id firstId %}
+		    		<div><fb:comments href="{{context.url}}{{item.path}}" width="519"></fb:comments></div>
+		    		{% endifequal %}
+			    </li>
+			{% endfor %}
+            {% endautoescape %}
+			</ul>
+			
+			<div class="more" moreBtn="2">
+				<a href="javascript:void(0)" onclick="sj.more({url:'/news/more',moreId:2})">Laad meer</a>	
+				<p style="display:none;">Laden ... </p>
+			</div>
+			
+		</div>
+	</div>
+	
+	<div id="sjRight">
+		<div class="sjBoxBlue">
+			<h3><a href="/home/busje">Ons nieuw schoolbusje is er!</a></h3>
+			<div class="sjFotoWrapper">
+				<a href="/home/busje" class="sjFoto shadow"><img src="http://lh3.googleusercontent.com/_9HfKL1PRuO8/TduQZHhTWPI/AAAAAAAABqk/EVuui8VFsVk/s128/IMG_1710.jpg" alt="Busje"/></a>
+			</div>
+		</div>
+		
+		<div class="sjBoxBlue">
+			<h3><a href="http://www.dossintjan.iseral.be/" target="_blank">Dorp op school</a></h3>
+			<p><a href="http://www.dossintjan.iseral.be/" target="_blank">De leerlingen van de 3de graad Basisschool Sint-Jan bouwen aan hun 'Dorp Op School', bekijk het hier!</a></p>
+			<div class="sjFotoWrapper">
+				<a href="https://picasaweb.google.com/basisschoolsintjan/DorpOpSchool02?authkey=Gv1sRgCNjFg_Hf79uLnAE" target="_blank" class="sjFoto shadow"><img src="http://lh3.googleusercontent.com/_9HfKL1PRuO8/TdZd2EQ09UI/AAAAAAAABfc/604V5HZ-toU/s128/P1070993.JPG" alt="Busje"/></a>
+			</div>
+		</div>
+	
+		<iframe src="/s/twitter.html" width="220" height="450" scrolling="no" frameborder="0" ></iframe>
+	</div>
+
+{% include "../inc/footer.html" %}
+
+
+
+

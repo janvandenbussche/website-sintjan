@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="nl" xml:lang="nl" xmlns:og="http://opengraphprotocol.org/schema/" xmlns:fb="http://www.facebook.com/2008/fbml">
+<head>
+<meta charset="utf-8"/>
+<title>Basisschool Sint-Jan Lommel</title>
+<meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
+<meta name="description" content="Vrije katholieke Basisschool Sint-Jan te lommel. Ervaringsgericht onderwijs: vanuit betrokkenheid, welbevinden en competenties proberen we een onderwijs uit te bouwen op maat van ieder kind."/>
+<meta name="keywords" content="website,school,basisschool,lommel,axenroos,ervaringsgericht,belgie,comenius,foto's,katholiek,kinderen,sneeuwklassen,kerkhoven,jaarthema"/>
+<meta name="robots" content="index, follow"/>
+<link rel='shortcut icon' href="/s/favicon.ico" type="image/ico"/>
+<link rel="stylesheet" href="/s/style.css" type="text/css"/>
+<link rel="stylesheet" href="/s/bs.css" type="text/css"/>
+<meta property="fb:page_id" content="204595559580247"/>
+<meta property="fb:app_id" content="203611616344380"/>
+<meta property="og:site_name" content="Basisschool Sint-Jan"/>
+<meta property="og:type" content="school"/>
+<meta property="og:title" content="Basisschool Sint-Jan"/>
+<meta property="og:url" content="http://www.sintjan-lommel.be"/>
+<meta property="og:image" content="{{context.url}}/s/img/logo4.gif"/>
+<style type="text/css">div#header{background-image:url({{context.header}})}</style>
+</head>
+<body>
+<a name="top"></a><div id="alles"><div id="logo"><a href="/" title="Home"><img src="/s/img/logo4.gif" alt="[logo]" /></a></div>
+<div id="nav" class="clearfix">
+<ul class="navLeft"><li>{{context.now}}</li></ul>
+<ul class="navRight">
+	{% if context.authOk %}
+	<li>{{context.user.nickname}}</li>
+	<li><a href="/admin">admin</a></li>
+    {% if page %}<li><a href="/admin/page/edit?pageid={{page.id}}">edit page</a></li>{% endif %}
+    <li>|</li>
+	<li><a href="{{context.logout}}">afmelden</a></li>
+	{% else %}
+	<li><a href="/info/contact">contact</a></li>
+	<li><a href="/home/sitemap">sitemap</a></li>
+	<li><a href="{{context.login}}">aanmelden</a></li>
+	{% endif %}
+</ul>
+</div>
+<div id="header">
+<table width="100%"><tr>
+<td><img src="/s/img/naam.gif" alt="Basisschool Sint-Jan"/></td>
+<td id="intro">
+	<img src="/s/img/intro1.jpg" alt="[1]" />
+	<img src="/s/img/intro2.jpg" alt="[2]" />
+	<img src="/s/img/intro3.jpg" alt="[3]" />
+</td></tr></table></div>
+
+
+<div id="menuz" class="clearfix">
+<ul>
+	<li><a href="/"{% ifequal menuItem "home" %}class="active"{% endifequal %}>Home</a></li>
+	<li><a href="/fotos/"{% ifequal menuItem "fotos" %}class="active"{% endifequal %}>Foto's</a></li>
+	<li><a href="/prikbord/"{% ifequal menuItem "prikbord" %}class="active"{% endifequal %}>Prikbord</a></li>
+	<li><a href="/overons/"{% ifequal menuItem "overons" %}class="active"{% endifequal %}>Over Ons</a></li>
+	<li><a href="/info/"{% ifequal menuItem "info" %}class="active"{% endifequal %}>Info</a></li>
+	<li><a href="/comenius/"{% ifequal menuItem "comenius" %}class="active"{% endifequal %}>Comenius</a></li>
+	<li><a href="/sneeuwklassen/"{% ifequal menuItem "sneeuwklassen" %}class="active"{% endifequal %}>Sneeuwklassen</a></li>
+</ul>
+</div>
+
+<div id="sjContent">
+                
+                
+                
+                
+                
+

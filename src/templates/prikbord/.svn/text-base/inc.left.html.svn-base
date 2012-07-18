@@ -1,0 +1,13 @@
+
+			<div id="sjLeft" class="sjLeftS1">
+				<h1>Prikbord</h1>
+				<div><ul>
+					<li><span class="arrow">&gt;&nbsp;</span><a href="/prikbord/">Bekijk alles</a></li>
+					<li><span class="arrow">&gt;&nbsp;</span><a href="/prikbord/voegtoe">Prik er iets op</a></li>
+				</ul>
+				</div>
+				
+				<iframe src="/s/twitter.html" width="220" height="450" scrolling="no" frameborder="0" ></iframe>
+			</div>
+
+			

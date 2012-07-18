@@ -1,0 +1,74 @@
+{% include "../inc/header.html" %}
+{% include "inc.left.html" %}
+
+	<div id="plaats">
+		<strong>U bent hier&nbsp;:&nbsp;</strong>
+		<a href="/info/">info</a><span class="arrow">&nbsp;&gt;&nbsp;</span>
+		<a href="/info/schoolraad">schoolraad</a>
+	</div>
+	
+	<div id="sjCenter">
+		<div class="sjPadding">
+
+	<h1>Schoolraad</h1>
+
+<p>De schoolraad is <strong>sedert 01 april 2005</strong> een nieuw en verplicht orgaan
+van inspraak, dat in feite effectief vanaf het schooljaar 2005 - 2006
+in de plaats treedt van de vroegere participatieraad.</p>
+
+<p>De schoolraad is samengesteld uit telkens maximaal 3 vertegen-
+woordigers van het schoolpersoneel, de ouders en de lokale gemeen-
+schap (maximaal 9 leden).</p>
+
+<p>De directeur en/of het schoolbestuur zijn geen lid van de schoolraad,
+maar kunnen wel voor informatie uitgenodigd worden.</p>
+
+<p>De schoolraad lijkt/hoopt het zwaartepunt te worden van formele
+inspraak vanwege alle belanghebbende in het beleid van de
+school.</p>
+
+<h2>Haar bevoegdheden kunnen als volgt geresumeerd </h2>
+<ul>
+<li>vrij advies inzake de algemene werking en organisatie van de
+school, alsmede inzake aangelegenheden die leerlingen, personeel
+en ouders aanbelangen;</li>
+
+<li>verplicht advies inzake een aantal essenti&euml;le bevoegdheden van
+schooolbestuur (profiel directeur, studieaanbod, samenwerkings-
+ verbanden, vervoer inrichtende macht, nascholingsbeleid en beleid
+inzake experimenten en projecten) ;</li>
+
+<li>verplicht overleg inzake andere essenti&euml;le bevoegdheden van het
+schoolbestuur (schoolreglement, bijdragenregeling, schoolwerkplan,
+beleidsplan, extra-muros activiteiten, infrastrucuurwerken, lestijden,
+welzijns- en veiligheidsbeleid, stageactiviteiten);</li>
+
+<li>een algemeen informatierecht om zijn taken goed te kunnen uitoefenen,
+naast een communicatieverplichting naar ouders, leerlingen en
+personeel;</li>
+</ul>
+
+<p>Concreet wil de schoolraad <strong>"het"</strong> orgaan zijn waar ouders, personeel en
+leerlingen terecht kunnen met voorstellen en/of problemen van eerder
+algemene aard!!</p>
+
+<h2>Samenstelling van de schoolraad</h2>
+
+<ul>
+<li>Voorzitter: Evy Stans</li>
+<li>Secretaris: An Vrancken</li>
+<li>Leden: 
+<ul>
+    <li>Lemmens Liliane</li>
+    <li>Geenen Greet</li>
+    <li>Vander Mierde Marc</li>
+</ul>
+</li>
+</ul>
+
+
+
+		</div>
+	</div>
+
+{% include "../inc/footer.html" %}

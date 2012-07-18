@@ -1,0 +1,61 @@
+{% include "../inc/header.html" %}
+{% include "inc.left.html" %}
+
+	<div id="plaats"><strong>U bent hier&nbsp;:&nbsp;</strong>
+		<a href="/admin">Admin</a><span class="arrow">&nbsp;&gt;&nbsp;</span>
+		<a href="/admin/cal/all">Kalender</a>
+	</div>
+
+	<div id="sjCenter" class="sj23">
+		<div class="sjPadding">
+			<h1>Kalender</h1>
+			<p><strong>Let op : </strong>alle velden zijn verplicht, en het moet een geldige datum zijn!</p>
+
+			{% if error %}
+			<div class="error">Alle velden zijn verplicht!</div>
+			{% endif %}
+
+			<form method="post" action="/admin/cal/edit">
+			<input type="hidden" name="id" value="{{item.id}}"/>		
+		
+			<table>
+				<tbody>
+					<tr>
+						<td style="width:100px"><label for="fDay">Dag:</label></td>
+						<td>
+							Dag: <select name="day" id="fDay">{% for d in days %}<option value="{{d}}" {% ifequal item.date.day d %}selected="selected"{% endifequal %}>{{d}}</option>{% endfor %}</select>
+							&nbsp;Maand: <select name="month">{% for m in months %}<option value="{{m}}" {% ifequal item.date.month m %}selected="selected"{% endifequal %}>{{m}}</option>{% endfor %}</select>
+							&nbsp;Jaar: <select name="year">{% for y in years %}<option value="{{y}}" {% ifequal item.date.year y %}selected="selected"{% endifequal %}>{{y}}</option>{% endfor %}</select>
+						</td>
+						<!-- http://stackoverflow.com/questions/2770083/can-i-compare-a-template-variable-to-an-integer-in-django-app-engine-templates -->
+					</tr>
+					<tr>
+						<td><label for="fTitle">De titel:</label></td>
+						<td><input id="fTitle" type="text" size="50" name="title" value="{{item.title}}"/></td>
+					</tr>
+					<tr>
+						<td valign="top"><label for="fMsg">Bericht:</label></td>
+						<td><textarea id="fMsg" rows="10" cols="55" name="msg">{{item.msg}}</textarea></td>
+					</tr>
+			        <tr><td><br/></td><td></td></tr>
+					<tr>
+						<td></td>
+						<td>
+							<input type="submit" name="submit" value="Opslaan"/>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			</form>
+			<script type="text/javascript">document.getElementById('fTitle').focus()</script>
+
+		</div>
+	</div>
+
+{% include "../inc/footer.html" %}
+
+
+
+
+
+

@@ -1,0 +1,28 @@
+{% include "../inc/header.html" %}
+{% include "inc.left.html" %}
+
+	<div id="plaats"><strong>U bent hier&nbsp;:&nbsp;</strong>
+		<a href="/prikbord/">Prikbord</a><span class="arrow">&nbsp;&gt;&nbsp;</span>
+		<a href="/prikbord/filter?name={{name}}">Op naam "{{name}}"</a>
+	</div>
+				
+	<div id="sjCenter" class="sjCenterS1">
+		<div class="sjPadding">
+			<h1>Prikbord per naam "{{name}}"</h1><p></p>
+
+			<ul id="guestbook">
+			{% for item in list %}
+			    <li _id="{{item.key.id}}">
+			    	<div class="name"><a href="/prikbord/filter?name={{item.name}}">{{item.name}}</a></div>
+			    	<div class="msg">{{item.msg}}</div>
+			    	<div class="date">{{item.formatted}}</div>
+			    </li>
+			{% endfor %}
+			</ul>
+		</div>
+	</div>
+
+{% include "../inc/footer.html" %}
+
+
+

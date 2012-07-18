@@ -1,0 +1,22 @@
+{% include "../inc/header.html" %}
+{% include "../inc/left.html" %}
+
+	<div id="plaats"><strong>U bent hier&nbsp;:&nbsp;</strong><a href="/admin">admin</a></div>
+
+	<div id="sjCenter" class="sj23">
+		<div class="sjPadding">
+		
+			<h1>Toegang geweigerd</h1>
+			{% if context.user %}
+			<ul>
+				<li>Naam: {{context.user.nickname}}</li>
+				<li>Email: {{context.user.email}}</li>
+				<li><a href="{{context.logout}}">Deze gebruiker afmelden bij google</a></li>
+			</ul>
+			{% endif %}
+			
+		</div>
+	</div>
+
+{% include "../inc/footer.html" %}
+

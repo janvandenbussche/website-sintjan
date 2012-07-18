@@ -1,0 +1,58 @@
+
+</div><!-- end sjContent -->
+
+<div id="footer" class="clearfix">
+<ul class="fooLeft">
+<li>Copyright &#169; {% now "Y" %}</li>
+<li><a href="http://www.sintjan-lommel.be">sintjan-lommel.be</a></li>
+</ul>
+
+<ul class="fooRight">
+<li>Volg ons: </li>
+<li class="fooTwttr"><a href="http://twitter.com/SintJan" target="_blank" title="Sint-Jan @ Twitter"><span class="iconTwitter"></span></a></li>
+<li class="fooFb"><a href="http://www.facebook.com/pages/Basisschool-Sint-Jan/204595559580247" target="_blank" title="Sint-Jan@ Facebook"><span class="iconFacebook"></span></a></li>
+</ul>
+</div>
+
+{% if debug1 or debug2 or debug3 or debug4 %}
+<ul>
+	<li>{{debug1}}</li>
+	<li>{{debug2}}</li>
+	<li>{{debug3}}</li>
+	<li>{{debug4}}</li>
+</ul>
+{% endif %}
+
+</div><!--alles-->
+
+{% if request.GET.status == 'ok'%}
+<div id="message"><p>Zo zo, het is opgeslagen</p></div>
+{% endif %}
+
+<div id="fb-root"></div>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+<script src="/s/script.js"></script>
+<script>
+    sj.init();
+
+    (function() {
+      var e = document.createElement('script'); e.async = true;
+      e.src = 'http://connect.facebook.net/nl_BE/all.js#xfbml=1';
+      document.getElementById('fb-root').appendChild(e);
+    }());
+
+    {% if context.analytics %}
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-72731-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+    {% endif %}
+</script>
+
+</body></html>

@@ -1,0 +1,42 @@
+{% include "../inc/header.html" %}
+{% include "inc.left.html" %}
+
+	<div id="plaats"><strong>U bent hier&nbsp;:&nbsp;</strong>
+		<a href="/admin">Admin</a><span class="arrow">&nbsp;&gt;&nbsp;</span>
+		<a href="/admin/cal/all">Kalender</a>
+	</div>
+
+	<div id="sjCenter" class="sj23">
+		<div class="sjPadding">
+			<h1>Kalender</h1>
+
+			<table class="overview" moreTarget="4">
+				<thead>
+					<tr><th>Title</th><th>Datum</th><th class="action">Acties</th></tr>
+				</thead>
+				<tbody>
+					{% for item in list %}
+					<tr moreItem="{{item.formatDate}}">
+						<td>{{item.title}}</td>
+						<td>{{item.formatted}}</td>
+						<td class="action"><a href="/admin/cal/edit?calid={{item.key.id}}">edit</a></td>
+					</tr>
+					{% endfor %}
+				</tbody>
+			</table>
+			
+			<div class="more" moreBtn="4">
+				<a href="javascript:void(0)" onclick="sj.more({url:'/admin/cal/more',moreId:4})">Laad meer</a>	
+				<p style="display:none;">Laden ... </p>
+			</div>
+
+		</div>
+	</div>
+
+{% include "../inc/footer.html" %}
+
+
+
+
+
+

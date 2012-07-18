@@ -1,0 +1,23 @@
+{% include "../inc/header.html" %}
+{% include "../inc/blocks/homepage.html" %}
+
+	<div id="plaats"><strong>U bent hier&nbsp;:&nbsp;</strong>
+		<a href="/">Home</a><span class="arrow">&nbsp;&gt;&nbsp;</span>
+		<a href="{{cal.path}}">{{cal.title}}</a>
+	</div>
+				
+	<div id="sjCenter" class="sj23">
+		<div class="sjPadding">
+			<h1>{{cal.formatted}}: {{cal.title}}</h1>
+			
+			<div class="artContent">
+				{{cal.msg}}
+			</div>			
+		</div>
+	</div>
+
+{% include "../inc/footer.html" %}
+
+
+
+

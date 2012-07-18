@@ -1,0 +1,31 @@
+{% include "../inc/header.html" %}
+{% include "../inc/left.html" %}
+
+	<div id="plaats"><strong>U bent hier&nbsp;:&nbsp;</strong><a href="/comenius">Comenius</a></div>
+				
+	<div id="sjCenter" class="sj23">
+		<div class="sjPadding">
+			<h1>Comenius</h1>
+		
+			<p>Op onze school zijn we het schooljaar <strong>2004 - 2005</strong> gestart met twee projecten nl. het
+			<strong>schoolpartnerschapsproject</strong> en een 
+			<strong>taalassistentschapsproject</strong>.</p>
+		
+			<div class="yellowbox2">
+			<ul>
+				<li><a href="/comenius/schoolpartnerschap">Schoolpartnerschap</a></li>
+				<li><a href="/comenius/taalassistentschap">Taalassistentschap</a></li>
+			</ul>	
+			</div>
+			
+			<h2>Vorig project</h2>
+			<ul>
+				<li><a href="/comenius/vorigeprojecten">Project 2001-2004</a></li>
+			</ul>
+		</div>
+	</div>
+
+{% include "../inc/footer.html" %}
+
+
+

@@ -1,0 +1,63 @@
+{% include "../inc/header.html" %}
+{% include "inc.left.html" %}
+{% autoescape off %}
+
+	<div id="plaats">
+		<strong>U bent hier&nbsp;:&nbsp;</strong>
+		<a href="/info/">info</a><span class="arrow">&nbsp;&gt;&nbsp;</span>
+		<a href="/info/contact">adres</a>
+	</div>
+	
+	<div id="sjCenter" class="sj23">
+		<div class="sjPadding clearfix" style="width:740px;">
+			<div class="left">
+				<h1>Adres</h1>
+				<p>Basisschool Sint-Jan<br />
+				Kerkweg 22<br />
+				3920 Lommel<br /><br />
+				tel : 011 / 34 42 20<br />
+				fax : 011 / 40 34 73<br />
+				email :
+				<a href="mailto:{{context.contact|mail}}">{{context.contact|mail}}</a><br />
+				</p>
+			</div>
+
+			<div class="right">
+				<div id="_map" style="width:400px;height:250px;"></div>
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false&language=nl"></script>
+	<script type="text/javascript">
+		function map(id)
+		{
+		    var center, map, mapOptions, markerOptions, gmMap, gmMarker;
+	
+		    center = new google.maps.LatLng(51.16317, 5.26421),
+		    map = document.getElementById(id);
+	
+		    mapOptions = {
+		        zoom: 14,
+		        center: center,
+		        mapTypeId: google.maps.MapTypeId.ROADMAP,
+		        mapTypeControlOptions: {style: google.maps.MapTypeControlStyle.DROPDOWN_MENU}
+		    };
+	
+		    markerOptions = {
+		        position: center,
+		        draggable: false,
+		        flat: false
+		    };
+	
+		    gmMap = new google.maps.Map(map, mapOptions);
+		    gmMarker = new google.maps.Marker(markerOptions);
+		    gmMarker.setMap(gmMap);
+		}
+
+		map("_map");
+	</script>
+
+{% endautoescape %}
+{% include "../inc/footer.html" %}
+

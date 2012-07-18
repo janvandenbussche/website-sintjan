@@ -1,0 +1,17 @@
+{% include "inc/header.html" %}
+
+	<div id="plaats"><strong>U bent hier&nbsp;:&nbsp;</strong>Niet gevonden</div>
+
+	<div id="sjCenter" class="sjNoline">
+		<h1>Deze pagina werd niet gevonden</h1>
+		<p>Vier nul vier: 404</p>
+		<p>Ga terug naar de <a href="/">homepagina</a></p>
+
+        {% if context.authOk %}
+        <div class="alert alert-error">
+            <strong>Pagina bestaat niet!</strong><br/><a href="/admin/page/edit?path={{path}}">Maak nieuwe pagina aan: {{path}}</a>
+        </div>
+        {% endif %}
+	</div>
+	
+{% include "inc/footer.html" %}

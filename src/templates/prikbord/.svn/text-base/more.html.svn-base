@@ -1,0 +1,10 @@
+
+{% autoescape off %}
+{% for item in list %}
+    <li moreItem="{{item.formatDate}}">
+    	<div class="name"><a href="/prikbord/filter?name={{item.name}}">{{item.name}}</a></div>
+    	<div class="msg">{{item.msg}}</div>
+    	<div class="date">{{item.formatted}}</div>
+    </li>
+{% endfor %}
+{% endautoescape %}

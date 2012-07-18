@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/26/gae/sintjan-lommel.be/src/gdata/blogger
+END
+data.py
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/26/gae/sintjan-lommel.be/src/gdata/blogger/data.py
+END
+client.py
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/26/gae/sintjan-lommel.be/src/gdata/blogger/client.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/26/gae/sintjan-lommel.be/src/gdata/blogger/__init__.py
+END
+service.py
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/26/gae/sintjan-lommel.be/src/gdata/blogger/service.py
+END

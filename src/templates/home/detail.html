@@ -1,0 +1,31 @@
+{% include "../inc/header.html" %}
+{% include "../inc/blocks/homepage.html" %}
+{% autoescape off %}
+
+	<div id="plaats"><strong>U bent hier&nbsp;:&nbsp;</strong>
+		<a href="/">Home</a><span class="arrow">&nbsp;&gt;&nbsp;</span>
+		<a href="{{art.path}}">{{art.title}}</a>
+	</div>
+				
+	<div id="sjCenter" class="sj23">
+		<div class="sjPadding">
+			<h1>{{art.title}}</h1>
+			
+			<div class="artContent">
+				{{art.msg}}
+			</div>
+			<div class="artDate">{{art.formatted}}</div>
+			
+			<div class="artReact">
+				<fb:comments href="{{context.url}}{{art.path}}" num_posts="10" width="519"></fb:comments>
+			</div>
+
+		</div>
+	</div>
+
+{% endautoescape %}
+{% include "../inc/footer.html" %}
+
+
+
+

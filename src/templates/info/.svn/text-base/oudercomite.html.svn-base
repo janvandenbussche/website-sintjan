@@ -1,0 +1,56 @@
+{% include "../inc/header.html" %}
+{% include "inc.left.html" %}
+
+	<div id="plaats">
+		<strong>U bent hier&nbsp;:&nbsp;</strong>
+		<a href="/info/">info</a><span class="arrow">&nbsp;&gt;&nbsp;</span>
+		<a href="/info/oudercomite">ouderraad</a>
+	</div>
+	
+	<div id="sjCenter">
+		<div class="sjPadding">
+
+
+	<h1>Ouderraad</h1>
+	<p>De bruisende oudervereniging van onze school straalt iets uit ...
+	Zij vormt de dialoog tussen ouders en de school. Iedere ouder is automatisch lid van deze vereniging. 
+	Voor wie zich geroepen voelt kan een meer actievere inzet binnen deze vereniging mogelijk zijn ... Iedereen is steeds welkom !
+	De oudervereniging is aangesloten bij het VCOV.
+	Maandelijks op donderdagavond komt het bestuur bijeen in de leraarskamer van de school. 
+	Bij een kop koffie of thee wordt gewerkt aan activiteiten.
+	Een greep uit het aanbod :</p>
+	<ul>
+		<li>mosselfeest</li>
+		<li>Sint-Maartensfeest</li>
+		<li>kinderboekenbeurs</li>
+		<li>kerstmarkt</li>
+		<li>algemene ouderavond</li>
+		<li>instuif</li>
+		<li>vormende vergaderingen</li>
+		<li>schoolfeest</li>
+		<li>receptie zesde leerjaar</li>
+		<li>klusjes opknappen</li>
+		<li>gezellig samenzijn</li>
+		<li>hulp bij grootouderfeest, moederdagfeest en carnavalstoet</li>
+		<li>...</li>
+	</ul>
+	<p>Dankzij al deze activiteiten kan de oudervereniging ondersteunend werken voor de school :</p>
+	<ul>
+		<li>Sinterklaaspakket aanbieden</li>
+		<li>sneeuwklassen steunen</li>
+		<li>receptie zesde leerjaar aanbieden</li>
+		<li>sprekers uitnodigen voor vormende vergaderingen</li>
+		<li>extra middelen voorzien voor de school zoals omheining,schoolmeubilair ...</li>
+	</ul>
+
+	<p>Iets voor jou ? Neem contact op of kom eens naar een activiteit !</p>
+	<p><a href="mailto:{{"ouderraad@sintjan-lommel.be"|mail}}">{{"ouderraad@sintjan-lommel.be"|mail}}</a></p>
+
+
+
+
+		</div>
+	</div>
+
+{% include "../inc/footer.html" %}
+

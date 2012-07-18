@@ -1,0 +1,37 @@
+{% include "../inc/header.html" %}
+
+	<div id="plaats"><strong>U bent hier&nbsp;:&nbsp;</strong>
+		<a href="/fotos/">Foto's</a>
+	</div>
+				
+	<div id="sjCenter" class="sjAll">
+		<h1>Foto's</h1>
+		<!-- <div class="green" style="margin-bottom:15px;">Wij zijn momenteel onze foto's aan het overzetten naar een nieuw systeem.  
+		Je kan de oude foto site nog terugvinden op <a href="http://fotos.sintjan-lommel.be" target="_blank">fotos.sintjan-lommel.be</a>.</div>
+		-->
+		
+		<div id="photos" class="clearfix">
+			{% for item in items %}
+			<div class="ph">
+				<div class="phBox shadow">
+					<a href="{{item.url}}" class="phImg" target="_blank"><img src="{{item.img}}" alt="Album"/></a>
+					<a href="{{item.url}}" class="phViewer" target="_blank">Bekijk</a>
+					<div class="phLayer"></div>
+				</div>
+				<div class="phCaption">
+					<h3><a href="{{item.url}}">{{item.title}}</a></h3>
+					<p><a href="{{item.url}}">{{item.caption}}</a></p>
+					<p class="phMeta">{{item.date}}</p>
+					<p class="phMeta">Aantal foto's: {{item.num}}</p>
+				</div>
+			</div>	
+			{% endfor %}
+		</div>
+			
+	</div>
+
+{% include "../inc/footer.html" %}
+
+
+
+

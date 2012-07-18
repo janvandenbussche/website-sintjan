@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/!svn/ver/57/gae/sintjan-lommel.be/src
+END
+index.yaml
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/26/gae/sintjan-lommel.be/src/index.yaml
+END
+main.py
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/55/gae/sintjan-lommel.be/src/main.py
+END
+app.yaml
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/56/gae/sintjan-lommel.be/src/app.yaml
+END

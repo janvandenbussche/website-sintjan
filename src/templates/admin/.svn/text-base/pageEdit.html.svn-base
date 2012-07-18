@@ -1,0 +1,76 @@
+{% include "../inc/header.html" %}
+{% include "inc.left.html" %}
+
+	<div id="plaats"><strong>U bent hier&nbsp;:&nbsp;</strong>
+		<a href="/admin">Admin</a><span class="arrow">&nbsp;&gt;&nbsp;</span>
+		<a href="/admin/page/add">Nieuwe pagina</a>
+	</div>
+
+	<div id="sjCenter" class="sj23">
+		<div class="sjPadding">
+			<h1>Nieuwe pagina</h1>
+            
+			{% if error %}
+			<div class="error">Alle velden zijn verplicht!</div>
+			{% endif %}
+
+            <form method="post" action="/admin/page/edit">
+			<input type="hidden" name="id" value="{{page.id}}"/>
+
+                <table>
+					<tr>
+						<td style="width:80px"><label for="pUrl">Url:</label></td>
+						<td><input id="pUrl" type="text" size="80" name="url" value="{{page.url}}"/></td>
+					</tr>
+					<tr>
+						<td><label for="pTitle">Titel:</label></td>
+						<td><input id="pTitle" type="text" size="80" name="title" value="{{page.title}}"/></td>
+					</tr>
+                    <tr>
+                        <td style="width:60px"><label for="pLeft">Kolom links:</label></td>
+                        <td>
+                            <select id="pLeft" name="blockLeft">
+                                <option value="">--</option>
+                                <option value="homepage" {% if blockLeft.name == 'homepage' %}selected="selected"{% endif %}>Homepagina</option>
+                                <option value="info" {% if blockLeft.name == 'info' %}selected="selected"{% endif %}>Info</option>
+                                <option value="about" {% if blockLeft.name == 'about' %}selected="selected"{% endif %}>Over ons</option>
+                                <option value="snow" {% if blockLeft.name == 'snow' %}selected="selected"{% endif %}>Sneeuwklassen</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width:60px"><label for="pFooter">Footer:</label></td>
+                        <td>
+                            <select id="pFooter" name="blockFooter">
+                                <option value="">--</option>
+                                <option value="jaarthema" {% if blockFooter.name == 'jaarthema' %}selected="selected"{% endif %}>Jaarthema</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td valign="top"><label for="pContent">Html:</label></td>
+						<td><textarea id="pContent" rows="25" cols="65" name="content">{{page.content}}</textarea></td>
+                    </tr>
+                    <tr>
+                        <td valign="top"><label for="pBreadcrumb">Breadcrumb:</label></td>
+						<td><textarea id="pBreadcrumb" rows="5" cols="65" name="breadcrumb">{{page.breadcrumb}}</textarea></td>
+                    </tr>
+
+					<tr>
+						<td></td>
+						<td>
+							<input type="submit" name="submit" value="Opslaan"/>
+						</td>
+					</tr>
+                </table>
+            </form>
+		</div>
+	</div>
+
+{% include "../inc/footer.html" %}
+
+
+
+
+
+
