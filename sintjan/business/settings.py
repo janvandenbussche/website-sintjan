@@ -57,7 +57,8 @@ class RequestContext():
 
 # A list of months, base on their month it an appropriate value will be in the array
 #axenroosConfig = []
-axenroosConfig = ["","Leeuw", "Bever","Kameel","Uil","Schildpad","Steenbok","","","Wasbeer","Pauw","Poes","Havik"];
+#axenroosConfig = ["","Leeuw", "Bever","Kameel","Uil","Schildpad","Steenbok","","","Wasbeer","Pauw","Poes","Havik"];
+axenroosConfig = ["","Havik", "Poes","Wasbeer","Steenbok","Kameel","Pauw","","","Bever","Uil","Leeuw","Schildpad"];
 
 # Pointers to the images
 axenroosArr = {

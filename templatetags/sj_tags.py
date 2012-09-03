@@ -65,6 +65,7 @@ def mail(str):
     tmp = tmp.replace("_","&#95;")
         
     return tmp
+    #return str
 
 
 def foo(str):

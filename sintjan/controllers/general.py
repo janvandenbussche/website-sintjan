@@ -50,7 +50,7 @@ class CatchallPage(webapp.RequestHandler):
                 if path == '/overons/':
                     path = '/overons/schoolmet5ks'
                 elif path == '/overons/jaarthema/':
-                    path = '/overons/jaarthema/2011-2012'
+                    path = '/overons/jaarthema/2012-2013'
                 elif path == '/info/':
                     path = '/info/contact'
 
