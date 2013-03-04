@@ -106,7 +106,7 @@ class EditPage(webapp.RequestHandler):
 class AllPage(webapp.RequestHandler):
     def get(self):
         if util.checkAuth(self, False):
-            items = db.GqlQuery("SELECT * FROM Page ORDER BY url ASC LIMIT 40")
+            items = db.GqlQuery("SELECT * FROM Page ORDER BY url ASC LIMIT 100")
             values = {'context':RequestContext(),'list':items, 'request':self.request}
             self.response.out.write(template.render('templates/admin/pageAll.html',values))
 

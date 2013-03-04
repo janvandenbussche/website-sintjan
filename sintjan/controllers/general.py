@@ -53,12 +53,30 @@ class CatchallPage(webapp.RequestHandler):
                 elif path == '/info/':
                     path = '/info/contact'
 
+                if path == '/sneeuwklassen' or path == '/sneeuwklassen/':
+                    import datetime
+                    now = datetime.datetime.now()
+                    #2013-03-04
+                    MAPPING = {
+                        '2013-03-04': '/sneeuwklassen/maandag-4-maart-2013',
+                        '2013-03-05': '/sneeuwklassen/disndag-5-maart-2013',
+                        '2013-03-06': '/sneeuwklassen/woensdag-6-maart-2013',
+                        '2013-03-07': '/sneeuwklassen/donderdag-7-maart-2013',
+                        '2013-03-08': '/sneeuwklassen/vrijdag-8-maart-2013',
+                        '2013-03-09': '/sneeuwklassen/zaterdag-9-maart-2013',
+                        '2013-03-10': '/sneeuwklassen/zondag-10-maart-2013',
+                        '2013-03-11': '/sneeuwklassen/maandag-11-maart-2013',
+                        '2013-03-12': '/sneeuwklassen/dinsdag-12-maart-2013',
+                        }
+                    path = MAPPING.get(now.strftime('%Y-%m-%d'), '/sneeuwklassen/maandag-4-maart-2013')
+
                 # Fetching the page
                 page = Page.gql("WHERE url = :url", url = path)[0]
 
                 values['page'] = page
                 values['blockLeft'] = self.getBlockLinkByRegion('left', page)
                 values['blockFooter'] = self.getBlockLinkByRegion('footer', page)
+                values['path'] = path
 
                 if not page.breadcrumb:
                     values['breadcrumbLength'] = 0
