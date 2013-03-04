@@ -17,7 +17,6 @@ class RedirectHomePage(webapp.RequestHandler):
     def get(self):
         self.redirect("/", permanent=True)
 
-        
   
 class CatchallPage(webapp.RequestHandler):
     def get(self):
@@ -80,7 +79,7 @@ class CatchallPage(webapp.RequestHandler):
     def getBlockLinkByRegion(self, region, page):
         query = BlockLink.gql("WHERE region = :region AND pageId = :pageId", region=region, pageId=page.id())
 
-        if query.count()>0:
+        if query.count() > 0:
             return query[0]
         else:
             blockLink = BlockLink()
