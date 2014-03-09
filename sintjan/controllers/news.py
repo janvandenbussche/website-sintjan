@@ -17,8 +17,13 @@ class HomePage(webapp.RequestHandler):
         except:
             firstId = -1
              
-        values = {'context':RequestContext(),'menuItem':'home','list':items,'calendar':self.renderCalendar(),'firstId':firstId}
-        self.response.out.write(template.render('templates/home/index.html',values))
+        values = {'context': RequestContext(),
+                  'menuItem': 'home',
+                  'list': items,
+                  'calendar': self.renderCalendar(),
+                  'firstId': firstId
+        }
+        self.response.out.write(template.render('templates/home/index.html', values))
 
     def renderCalendar(self):
         #items = db.GqlQuery()
@@ -44,8 +49,6 @@ class HomePage(webapp.RequestHandler):
         
         tmpStr += "<!-- " + dateMin.strftime("%A %d. %B %Y") + ", " + dateMax.strftime("%A %d. %B %Y") + " -->"
         return tmpStr
-      
-
 
 
 '''

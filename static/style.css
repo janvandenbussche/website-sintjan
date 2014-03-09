@@ -107,6 +107,11 @@ background:transparent url(img/jaarthema/sjakie.png) no-repeat 0 0;
 #sjLeft div.jaarthema3{display:block;width:200px;height:280px;overflow:hidden;
     background:transparent url(img/jaarthema/alfred2.jpg) no-repeat 0 0;
 }
+#sjLeft div.jaarthema4{
+    display:block;width:200px;height:280px;overflow:hidden;
+    background:transparent url(img/jaarthema/luchtkasteel.jpg) no-repeat 0 0;
+    background-size: 100%;
+}
 
 #sjCenter h1{color:#f70;background:transparent url(img/vink.gif) top left no-repeat;font-size:14pt;margin:0 0 15px 0;padding:0 0 0 25px;}
 #sjCenter h2, #sjCenter h2.newstitle, #sjCenter h3{background:transparent;color:orange;font-size:10pt;margin:0;}

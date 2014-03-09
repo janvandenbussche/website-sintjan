@@ -10,7 +10,7 @@ from sintjan.business.model import BlockLink
 class SitemapPage(webapp.RequestHandler):
     def get(self):
         values = {'context':RequestContext(),'menuItem':'home'}
-        self.response.out.write(template.render('templates/home/sitemap.html',values))
+        self.response.out.write(template.render('templates/home/sitemap.html', values))
   
   
 class RedirectHomePage(webapp.RequestHandler):  
@@ -49,7 +49,7 @@ class CatchallPage(webapp.RequestHandler):
                 if path == '/overons/':
                     path = '/overons/schoolmet5ks'
                 elif path == '/overons/jaarthema/':
-                    path = '/overons/jaarthema/2012-2013'
+                    path = '/overons/jaarthema/2013-2014'
                 elif path == '/info/':
                     path = '/info/contact'
 
