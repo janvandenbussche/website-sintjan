@@ -57,6 +57,7 @@ class CatchallPage(webapp.RequestHandler):
                     import datetime
                     now = datetime.datetime.now()
                     #2013-03-04
+                    """
                     MAPPING = {
                         '2013-03-10': '/sneeuwklassen/maandag-10-maart-2014',
                         '2013-03-11': '/sneeuwklassen/disndag-11-maart-2014',
@@ -68,7 +69,19 @@ class CatchallPage(webapp.RequestHandler):
                         '2013-03-17': '/sneeuwklassen/maandag-17-maart-2014',
                         '2013-03-18': '/sneeuwklassen/dinsdag-18-maart-2014',
                         }
-                    path = MAPPING.get(now.strftime('%Y-%m-%d'), '/sneeuwklassen/maandag-10-maart-2014')
+                    """
+                    MAPPING = {
+                        "2015-03-26": "/sneeuwklassen/donderdag-26-maart-2015",
+                        "2015-03-27": "/sneeuwklassen/vrijdag-27-maart-2015",
+                        "2015-03-28": "/sneeuwklassen/zaterdag-28-maart-2015",
+                        "2015-03-29": "/sneeuwklassen/zondag-29-maart-2015",
+                        "2015-03-30": "/sneeuwklassen/maandag-30-maart-2015",
+                        "2015-03-31": "/sneeuwklassen/dinsdag-31-maart-2015",
+                        "2015-04-01": "/sneeuwklassen/woensdag-1-april-2015",
+                        "2015-04-02": "/sneeuwklassen/donderdag-2-april-2015",
+                        "2015-04-03": "/sneeuwklassen/vrijdag-3-april-2015"
+                    }
+                    path = MAPPING.get(now.strftime('%Y-%m-%d'), '/sneeuwklassen/donderdag-26-maart-2015')
 
                 # Fetching the page
                 page = Page.gql("WHERE url = :url", url = path)[0]
