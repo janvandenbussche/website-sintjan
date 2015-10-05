@@ -32,7 +32,6 @@
 	<li><a href="{{context.logout}}">afmelden</a></li>
 	{% else %}
 	<li><a href="/info/contact">contact</a></li>
-	<li><a href="/home/sitemap">sitemap</a></li>
 	<li><a href="{{context.login}}">aanmelden</a></li>
 	{% endif %}
 </ul>
@@ -51,11 +50,8 @@
 <ul>
 	<li><a href="/"{% ifequal menuItem "home" %}class="active"{% endifequal %}>Home</a></li>
 	<li><a href="/fotos/"{% ifequal menuItem "fotos" %}class="active"{% endifequal %}>Foto's</a></li>
-	<li><a href="/prikbord/"{% ifequal menuItem "prikbord" %}class="active"{% endifequal %}>Prikbord</a></li>
 	<li><a href="/overons/"{% ifequal menuItem "overons" %}class="active"{% endifequal %}>Over Ons</a></li>
 	<li><a href="/info/"{% ifequal menuItem "info" %}class="active"{% endifequal %}>Info</a></li>
-	<li><a href="/comenius/"{% ifequal menuItem "comenius" %}class="active"{% endifequal %}>Comenius</a></li>
-	<li><a href="/sneeuwklassen/"{% ifequal menuItem "sneeuwklassen" %}class="active"{% endifequal %}>Sneeuwklassen</a></li>
 </ul>
 </div>
 

@@ -104,12 +104,17 @@ a img{border-width:0;display:block;}
 background:transparent url(img/jaarthema/sjakie.png) no-repeat 0 0;
 }
 
-#sjLeft div.jaarthema3{display:block;width:200px;height:280px;overflow:hidden;
+#sjLeft div.jaarthema3 {display:block;width:200px;height:280px;overflow:hidden;
     background:transparent url(img/jaarthema/alfred2.jpg) no-repeat 0 0;
 }
-#sjLeft div.jaarthema4{
+#sjLeft div.jaarthema4 {
     display:block;width:200px;height:280px;overflow:hidden;
     background:transparent url(img/jaarthema/luchtkasteel.jpg) no-repeat 0 0;
+    background-size: 100%;
+}
+#sjLeft div.jaarthema5 {
+    display:block;width:200px;height:280px;overflow:hidden;
+    background:transparent url(img/jaarthema/oz.jpg) no-repeat 0 0;
     background-size: 100%;
 }
 
